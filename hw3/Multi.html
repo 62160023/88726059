@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url("https://cdn.wallpapersafari.com/45/18/tap1bQ.jpg");
+        }
+        html {
+          font-family: sans-serif;
+        }
+  
+        body {
+          width: 50%;
+          max-width: 800px;
+          min-width: 480px;
+          margin: 0 auto;
+        }
+  
+        .lastResult {
+          color: rgb(255, 255, 255);
+          padding: 3px;
+        }
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi</title>
+    <script>
+        function multi(num) {
+        num = document.getElementById('number').value
+        div = document.getElementById('disp');
+        ///// กำหนดค่าว่างให้แอททริบิวท์ innerHTML
+        div.innerHTML = ""; 
+        for (i = 1; i <= 12; i++) {
+            div.innerHTML += num + "x" + i + "=" + (num * i) + "<br>";
+        }
+    }
+        
+    </script>
+</head>
+<body>
+    <input type="Integer" id="number" >
+    <button onclick="multi();">คำนวณสูตร</button>
+    <div id="disp"></div>
+   
+</body>
+</html>
